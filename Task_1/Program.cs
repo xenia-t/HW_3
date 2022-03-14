@@ -27,9 +27,9 @@ bool Palindrom(string str)
 
 
 
-if (Math.Abs(N) > 9999 && Math.Abs(N) < 100000)
+if ((N) > 9999 && (N) < 100000)
 {
-    string strNew = Math.Abs(N).ToString();
+    string strNew = (N).ToString();
     if(Palindrom(strNew)) 
     {
         Console.WriteLine("Палиндром");
