@@ -1,4 +1,6 @@
-﻿int Prompt(String message)
+﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом
+
+int Prompt(String message)
 {
     Console.Write(message);
     string strValue = Console.ReadLine();
@@ -12,7 +14,7 @@ bool Polindrom(string str)
 {
 
     int lengh = str.Length;
-    
+
     for (int i = 0; i < lengh/2; i++)
     {
         if(str[i] != str[lengh-i-1])
@@ -23,9 +25,11 @@ bool Polindrom(string str)
     return true;
 }
 
-if (N > 9999 && N < 100000)
+
+
+if (Math.Abs(N) > 9999 && Math.Abs(N) < 100000)
 {
-    string strNew = N.ToString();
+    string strNew = Math.Abs(N).ToString();
     if(Polindrom(strNew)) 
     {
         Console.WriteLine("Полиндром");
