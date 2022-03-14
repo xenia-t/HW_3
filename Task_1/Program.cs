@@ -10,7 +10,7 @@ int Prompt(String message)
 
 int N = Prompt("Введите пятизначное число: ");
 
-bool Polindrom(string str)
+bool Palindrom(string str)
 {
 
     int lengh = str.Length;
@@ -30,11 +30,11 @@ bool Polindrom(string str)
 if (Math.Abs(N) > 9999 && Math.Abs(N) < 100000)
 {
     string strNew = Math.Abs(N).ToString();
-    if(Polindrom(strNew)) 
+    if(Palindrom(strNew)) 
     {
-        Console.WriteLine("Полиндром");
+        Console.WriteLine("Палиндром");
     }
-    else Console.WriteLine("Не полиндром");
+    else Console.WriteLine("Не палиндром");
 }
 
 else Console.WriteLine("Число не является пятизначным");
